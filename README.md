@@ -16,8 +16,7 @@ Outliers are often a primary cause of skewness in a dataset. Skewness refers to 
 1. Z-Score: Data points falling outside a certain number of standard deviations (e.g., +/- 3) from the mean are considered outliers and removed. This method assumes a somewhat normal distribution.
 2. Interquartile Range (IQR): This is a more robust method for non-normally distributed data. Outliers are identified as data points falling below Q1−1.5×IQR or above Q3+1.5×IQR, where Q1 is the first quartile and Q3 is the third quartile.
 3. K-Means clustering: aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centroid).
-
-  o	Distance-based: After clusters are formed, calculate the distance of each point to its cluster centroid. Points that are very far from their centroid can be considered outliers. A threshold for this distance 
+   Distance-based: After clusters are formed, calculate the distance of each point to its cluster centroid. Points that are very far from their centroid can be considered outliers. A threshold for this distance 
        would need to be defined (e.g., based on a multiple of the standard deviation of distances within the cluster or a percentile).
-  o	Cluster size: If a cluster has a very small number of points compared to others, the points in that tiny cluster might be outliers, especially if the cluster is also distant from others.
-  o	Removal: Once potential outliers are identified based on distance or small cluster size, they can be filtered out.
+   Cluster size: If a cluster has a very small number of points compared to others, the points in that tiny cluster might be outliers, especially if the cluster is also distant from others.
+   Removal: Once potential outliers are identified based on distance or small cluster size, they can be filtered out.
