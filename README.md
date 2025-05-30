@@ -1,5 +1,5 @@
 # outlier_detection
-** what is an Outlier ?
+**what is an Outlier ?**
 
 An outlier is a data point that significantly differs from other observations in a dataset. 🧐
 Think of it like a single bright red apple in a basket full of green apples. This red apple stands out because it's distinctly different from the rest.
